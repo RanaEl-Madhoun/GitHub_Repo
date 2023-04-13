@@ -5,6 +5,7 @@ import 'package:github_repo/domain/helper/user_helper.dart';
 import 'package:github_repo/domain/models/user_details.dart';
 import 'package:github_repo/domain/provider/user_provider.dart';
 import 'package:github_repo/presentation/pagewidget/git_widget.dart';
+import 'package:github_repo/presentation/searchbar/searchbar_view.dart';
 import 'package:provider/provider.dart';
 
 class MyHome extends StatelessWidget{
@@ -23,15 +24,27 @@ class MyHome extends StatelessWidget{
 
 
                    
- ListView.builder(
-  shrinkWrap:true,
-  itemCount: Provider.userdetails.length,
-  itemBuilder: (context, index) {
-   return GitWidget(Provider.userdetails[index]);
-  }
- 
-
-),
+ SingleChildScrollView(
+   child: Column(
+     children: [
+      Searchbar(),
+       SizedBox(
+        height: 1000,
+         child: Expanded(
+           child: ListView.builder(
+            shrinkWrap:true,
+            itemCount: Provider.userdetails.length,
+            itemBuilder: (context, index) {
+             return GitWidget(Provider.userdetails[index]);
+            }
+           
+              
+              ),
+         ),
+       ),
+     ],
+   ),
+ ),
 floatingActionButton: FloatingActionButton(
   onPressed: Provider.refreshRepositories,
   tooltip: 'Refresh',

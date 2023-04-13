@@ -11,6 +11,7 @@ class UserProvider extends ChangeNotifier{
   }
   bool isLoading=false;
 List<Items> userdetails=[];
+List<Items> searchedusers=[];
 
   Future <void> getUsers()async{
     isLoading=true;
@@ -33,6 +34,22 @@ List<Items> userdetails=[];
   }
  Future<void> refreshRepositories() async {
     await getUsers();
+  }
+  searchUsers(String value)async{
+     isLoading=true;
+      searchedusers=[];
+
+    notifyListeners();
+   
+    final response=await UserHelper.userhelper.searchUsers(value);
+  
+    searchedusers.addAll(response.items??[]);
+   
+    isLoading=false;
+    notifyListeners();
+    log(userdetails.length.toString());
+
+
   }
    
   
