@@ -265,8 +265,8 @@ class Items {
         json['license'] != null ? new License.fromJson(json['license']) : null;
     allowForking = json['allow_forking'];
     isTemplate = json['is_template'];
-    webCommitSignoffRequired = json['web_commit_signoff_required'];
-    topics = json['topics'];
+     webCommitSignoffRequired = json['web_commit_signoff_required'];
+    // topics = json['topics'];
     visibility = json['visibility'];
     forks = json['forks'];
     openIssues = json['open_issues'];

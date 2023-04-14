@@ -7,6 +7,7 @@ class MarginManger{
   static const double m18= 18.0;
   static const double m20= 20.0;
   static const double m22= 22.0;
+  static const double m26= 26.0;
 }
 class PaddingManger{
   static const double p2= 2.0; 
@@ -20,20 +21,17 @@ class PaddingManger{
   static const double p22= 22.0;
 }
 class AppSizeManger{
-  static const double s1_5=1.5;
-    static const double s8=8;
-        static const double s2=2;
-static const double s3=3;
-
+  static const double s1_5=1.5;  
+  static const double s8=8;
+  static const double s2=2;
+  static const double s3=3;
 static const double s5=5;
-
-
-
-    static const double s4= 4.0; 
+ static const double s4= 4.0; 
   static const double s12= 12.0; 
   static const double s14= 14.0;
   static const double s16= 16.0;
   static const double s18= 18.0;
   static const double s20= 20.0;
   static const double s22= 22.0;
+  static const double s0_7=.7;
 }

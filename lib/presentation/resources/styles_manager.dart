@@ -20,7 +20,7 @@ TextStyle _getTextStyle(double fontsize,FontWeight fontWeight,Color color){
     return _getTextStyle(fontSize, FontWeightManger.Reguler, color);
   }
   TextStyle getMediumrStyle({
-    double fontSize=FontSizeManger.s16,
+    double fontSize=FontSizeManger.s14,
     FontWeight:FontWeightManger.Medium,
 
     required Color color
@@ -30,7 +30,7 @@ TextStyle _getTextStyle(double fontsize,FontWeight fontWeight,Color color){
   }
   //Bold
   TextStyle getBoldStyle({
-    double fontSize=FontSizeManger.s16,
+    double fontSize=FontSizeManger.s14,
     required Color color
     })
     {

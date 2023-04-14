@@ -3,11 +3,12 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:github_repo/presentation/resources/values_manager.dart';
 
 import '../../app/app.dart';
-import '../ResourceManager/asset_manager.dart';
-import '../ResourceManager/color_manager.dart';
-import '../ResourceManager/constants_manager.dart';
+import '../resources/asset_manager.dart';
+import '../resources/color_manager.dart';
+import '../resources/constants_manager.dart';
 
 
 
@@ -39,17 +40,18 @@ Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){return M
   
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-   return Scaffold(
-   backgroundColor: ColorManager.primary,
-   body: const Center(
+   return  Scaffold(
+   backgroundColor: ColorManager.white,
+   body: Center(
     child: 
-     Image(image: AssetImage(ImageAssets.splashLogo),)),
+     Container(
+     margin:const EdgeInsets.all(MarginManger.m26),
+     padding:const EdgeInsets.all(PaddingManger.p20),
+      child: const Image(image: AssetImage(ImageAssets.splashLogo),))),
    );
   }
   @override
   void dispose() {
-    // TODO: implement dispose
     _timer?.cancel();
     super.dispose();
   }
