@@ -1,1 +1,1 @@
-This is an app for
+A flutter  responsive app and web codebase for fetching repositories from Github rest API, the user can click on the widget that contains the name and it will move to the HTTP repo page the user can search on any repo by repo name or description or username.
