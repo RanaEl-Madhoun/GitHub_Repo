@@ -93,7 +93,7 @@ class Items {
   bool? hasPages;
   bool? hasDiscussions;
   int? forksCount;
-  Null? mirrorUrl;
+  Null mirrorUrl;
   bool? archived;
   bool? disabled;
   int? openIssuesCount;

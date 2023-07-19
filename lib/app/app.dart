@@ -1,8 +1,6 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:github_repo/domain/helper/user_helper.dart';
-import 'package:github_repo/domain/models/user_details.dart';
+
 import 'package:github_repo/domain/provider/user_provider.dart';
 import 'package:github_repo/presentation/resources/color_manager.dart';
 import 'package:github_repo/presentation/pagewidget/git_widget.dart';

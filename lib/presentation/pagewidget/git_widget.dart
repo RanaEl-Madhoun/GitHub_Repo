@@ -4,11 +4,12 @@ import 'package:flutter/material.dart';
 
 import 'package:github_repo/domain/models/user_details.dart';
 import 'package:github_repo/presentation/resources/values_manager.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../resources/styles_manager.dart';
 
+// ignore: must_be_immutable
 class GitWidget extends StatelessWidget{
   GitWidget(
    
@@ -20,7 +21,7 @@ class GitWidget extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-     double appwidth=MediaQuery.of(context).size.width;
+   
      double appheight=MediaQuery.of(context).size.height;
     double appwidthweb=MediaQuery.of(context).size.width/AppSizeManger.s2;
      double appheightweb=MediaQuery.of(context).size.height/AppSizeManger.s3;

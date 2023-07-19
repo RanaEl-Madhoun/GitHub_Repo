@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:github_repo/domain/provider/user_provider.dart';
-import 'package:github_repo/presentation/searchbar/search_users.dart';
+
 import 'package:github_repo/presentation/splash/splash_view.dart';
 import 'package:provider/provider.dart';
-import 'app/app.dart';
+
 
 void main()async {
 WidgetsFlutterBinding.ensureInitialized();

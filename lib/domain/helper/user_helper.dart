@@ -1,7 +1,5 @@
 import 'dart:convert';
-import 'dart:developer';
 
-import 'package:dio/dio.dart';
 
 import 'package:github_repo/domain/models/user_details.dart';
 import 'package:http/http.dart' as http;

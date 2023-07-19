@@ -1,15 +1,12 @@
-import 'dart:developer';
+
 
 import 'package:flutter/material.dart';
-import 'package:github_repo/domain/helper/user_helper.dart';
-import 'package:github_repo/domain/models/user_details.dart';
+
 import 'package:github_repo/domain/provider/user_provider.dart';
 import 'package:github_repo/presentation/pagewidget/git_widget.dart';
-import 'package:github_repo/presentation/searchbar/search.dart';
-import 'package:github_repo/presentation/searchbar/searchbar_view.dart';
+
 import 'package:provider/provider.dart';
 
-import '../presentation/searchbar/search_users.dart';
 
 class SearchResults extends StatelessWidget{
 
